@@ -6,6 +6,10 @@ import sys
 import oyaml as yaml
 
 # Settings
+# To get key numbers, check...
+# zmk-nodefree-config/keypos_def/keypos_36keys.h
+#
+# Increment the numbers from there by 1
 pressed_buttons = [
     ('123', 34),
     ('hjkl', 31),
@@ -35,8 +39,8 @@ def adjust_combo(keymap, combo_locations):
     keymap = copy.deepcopy(keymap)
 
     for combo in keymap['combos']:
-        if len(combo['p']) > 2:
-            combo['a'] = 'top'
+        # if len(combo['p']) > 2:
+        #     combo['a'] = 'top'
 
         combo_location = combo_locations.get(tuple(combo['p']), None)
         if combo_location is not None:

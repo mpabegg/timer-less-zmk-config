@@ -181,6 +181,7 @@ parse_config:
     '&td_at_email': {t: '@'}
     '&num_word': 'NUM'
     '&nav_word': 'NAV'
+    '&caps_word_capslock': "Caps\nWord"
     '&caps_word': '⇪'
     '&td_shift_l': '⇧'
     '&td_shift_r': '⇧'
@@ -188,6 +189,12 @@ parse_config:
     '&td_bt_clear': 'BT CLR'
     '&m_type_md_code_block': '```'
     '&kt LSHFT': "⇧\nLock"
+    '&lt_num_word 4 0': {t: "Num\nWord", h: 'Num'}
+    '&ltog LGUI 5': {t: "Cancel\nNav", h: '⌘'}
+    '&ltog LGUI 6': {t: "Cancel\nNum", h: '⌘'}
+    '&ltog LGUI 7': {t: "Cancel\nSym", h: '⌘'}
+    '&ltog LGUI 8': {t: "Cancel\nFunc", h: '⌘'}
+    '&ltog LGUI 9': {t: "Cancel\nAdjust", h: '⌘'}
   skip_binding_parsing: false
   zmk_keycode_map:
     AMPERSAND: '&'
@@ -301,3 +308,10 @@ parse_config:
     'LG(X)': '⌘X'
     'LG(C)': '⌘C'
     'LG(V)': '⌘V'
+    'LC(TAB)': '⌃↹'
+    'LS(LC(TAB))': '⌃⇧↹'
+#   zmk_combos:
+#     combo_tog_nav_word: {'a': 'bottom', 'o': -0.25}
+#     combo_tog_num_word: {'a': 'bottom', 'o': 0.0}
+#     combo_return: {'a': 'bottom', 'o': 0.3}
+#     combo_capsword: {'k': "Caps\nWord"}
