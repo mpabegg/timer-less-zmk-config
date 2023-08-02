@@ -7,4 +7,4 @@ echo '\n\nAdjusting keymap yaml...'
 rm -rf chocofi_keymap.yamlupdated && ./keymap_img_adjuster.py chocofi_keymap.yaml
 
 echo '\n\nDrawing keymap...'
-keymap -c chocofi_keymap_config.yaml draw --select-layers Base Nav Num Func Sym Adjust -k chocofi chocofi_keymap.yaml > chocofi_keymap.svg
+keymap -c chocofi_keymap_config.yaml draw --select-layers abc '123' hjkl ext -k chocofi chocofi_keymap.yaml > chocofi_keymap.svg

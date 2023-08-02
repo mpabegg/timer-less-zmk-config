@@ -19,9 +19,7 @@ pressed_buttons = [
 
 delete_layers = []
 
-combo_locations = {
-}
-
+combo_locations = { }
 
 def get_keymap_yaml(file_path):
     with open(file_path, 'r') as f:
