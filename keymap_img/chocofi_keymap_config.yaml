@@ -18,7 +18,7 @@ draw_config:
   svg_style: |
     /* font and background color specifications */
     svg {
-        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        font-family: ComicCode Nerd Font,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
         font-size: 14px;
         font-kerning: normal;
         text-rendering: optimizeLegibility;
@@ -195,8 +195,27 @@ parse_config:
     '&ltog LGUI 7': {t: "Cancel\nSym", h: '⌘'}
     '&ltog LGUI 8': {t: "Cancel\nFunc", h: '⌘'}
     '&ltog LGUI 9': {t: "Cancel\nAdjust", h: '⌘'}
+    '&bt BT_SEL 0': '󰂯0'
+    '&bt BT_SEL 1': '󰂯1'
+    '&bt BT_SEL 2': '󰂯2'
+    '&bt BT_SEL 3': '󰂯3'
+    '&bt BT_CLR': '󰂯󱟃'
   skip_binding_parsing: false
   zmk_keycode_map:
+    N0: {t: '0', s: ')'}
+    N1: {t: '1', s: '!'}
+    N2: {t: '2', s: '@'}
+    N3: {t: '3', s: '#'}
+    N4: {t: '4', s: '$'}
+    N5: {t: '5', s: '%'}
+    N6: {t: '6', s: '^'}
+    N7: {t: '7', s: '&'}
+    N8: {t: '8', s: '*'}
+    N9: {t: '8', s: '('}
+    SPACE: '⎵'
+    RET: '⏎'
+    ESC: '⎋'
+    BSPC: '󰌍'
     AMPERSAND: '&'
     AMPS: '&'
     APOS: .
@@ -206,7 +225,7 @@ parse_config:
     AT: '@'
     AT_SIGN: '@'
     BACKSLASH: {t: '\', s: '|'}
-    BSLH: \
+    BSLH: {t: '\', s: '|' }
     CARET: ^
     COLON: ':'
     COMMA: {t: ',', s: '<'}
@@ -218,7 +237,7 @@ parse_config:
     EQUAL: {t: '=', s: '+'}
     EXCL: '!'
     EXCLAMATION: '!'
-    FSLH: /
+    FSLH: {t: '/', s: '?' }
     GRAVE: {t: '`', s: '~'}
     GREATER_THAN: '>'
     GT: '>'
@@ -256,7 +275,7 @@ parse_config:
     SINGLE_QUOTE:  {t: '''', s: '"'}
     SLASH: {t: '/', s: '?'}
     SLASH: {t: '/', s: '?'}
-    SQT: ''''
+    SQT: {t: '''', s: '"'}
     STAR: '*'
     TILDE: '~'
     TILDE2: '~'
@@ -286,11 +305,17 @@ parse_config:
     RETURN: '⏎'
     ESCAPE: '⎋'
     C_REWIND: '⏮'
+    C_PREV: '⏮'
     C_FAST_FORWARD: '⏭'
+    C_NEXT: '⏭'
     C_PAUSE: '⏯'
+    C_PP: '⏯'
+    K_MUTE: '󰝟'
     C_MUTE: "VOL\nMUTE"
     C_VOLUME_DOWN: "VOL\nDOWN"
+    C_VOL_DN: ''
     C_VOLUME_UP: "VOL\nUP"
+    C_VOL_UP: ""
     C_BRIGHTNESS_DEC: '☀↓'
     C_BRIGHTNESS_INC: '☀↑'
     LA(LEFT): ↞

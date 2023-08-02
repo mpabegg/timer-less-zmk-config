@@ -21,7 +21,7 @@
       timeout-ms = <COMBO_TERM_FAST>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <LM2 LM3>;
+      key-positions = <LM1 LM2>;
       layers = <BAS>;
       bindings = <&kp TAB>;
     };
